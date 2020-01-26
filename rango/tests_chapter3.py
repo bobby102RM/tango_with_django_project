@@ -1,12 +1,3 @@
-from django.test import TestCase
-
-
-178 lines (146 sloc) 9.35 KB 
-Raw
-Blame
-History
-
-
 # 
 
 # Tango with Django 2 Progress Tests
