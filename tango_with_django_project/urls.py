@@ -1,5 +1,4 @@
 """tango_with_django_project URL Configuration
-
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
 Examples:
@@ -23,7 +22,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path("rango/index/", views.index, name ='index'),
-	path("rango/about/", views.about, name ='about'),
+	path("about/", views.about, name ='about'),
 	path("rango/", include("rango.urls")),
     path('admin/', admin.site.urls),
 ]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
