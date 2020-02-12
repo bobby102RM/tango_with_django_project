@@ -69,6 +69,10 @@ TEMPLATES = [
     },
 ]
 
+PASSWORD_HASHERS = (
+	'django.contrib.auth.hashers.PBKDF2PasswordHasher', 
+	'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
+)
 WSGI_APPLICATION = 'tango_with_django_project.wsgi.application'
 
 
@@ -101,6 +105,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+LOGIN_URL = 'rango:login'
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
